@@ -1,0 +1,8 @@
+{
+  "files": {
+    "loopback#static": {
+      "enabled": true,
+      "params": "$!../dist"
+    }
+  }
+}
