@@ -50,6 +50,9 @@ watcher
   });
 
 const webpackConfig = require('../webpack.config');
+webpackConfig.entry.hotreload = [
+  'webpack-dev-server/client?http://localhost:' + config.front.port
+];
 const webpack = require('webpack');
 const compiler = webpack(webpackConfig);
 const webpackDevServer = new WebpackDevServer(compiler, {
